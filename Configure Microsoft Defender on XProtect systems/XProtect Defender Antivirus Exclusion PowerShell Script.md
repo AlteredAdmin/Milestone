@@ -1,4 +1,4 @@
-## XProtect Antivirus Exclusion PowerShell Script
+## XProtect Defender Exclusion PowerShell Script
 
 ### Overview
 

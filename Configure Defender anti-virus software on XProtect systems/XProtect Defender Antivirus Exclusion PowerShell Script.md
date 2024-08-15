@@ -1,8 +1,10 @@
-# XProtect Antivirus Exclusion PowerShell Script
+## README for XProtect Antivirus Exclusion PowerShell Script
 
 ### Overview
 
 This PowerShell script is designed to configure antivirus exclusions for Milestone XProtect Video Management Software (VMS) servers. Active high-performance databases, such as those used by XProtect, should not be scanned by antivirus software to prevent performance degradation and potential data corruption. This script automates the process of excluding specific files, folders, and processes from antivirus scans, in line with best practices recommended in the provided knowledge base (KB) article.
+
+For more detailed information, please refer to the official Milestone KB article: [Configure anti-virus software on XProtect systems](https://supportcommunity.milestonesys.com/s/article/Configure-anti-virus-software-on-XProtect-systems?language=en_US).
 
 ### Script Functionality
 
@@ -56,7 +58,7 @@ The script performs the following tasks:
 3. **Run the script**:
    - Open PowerShell with administrative privileges.
    - Navigate to the directory where the script is located.
-   - Execute the script by typing `.\ScriptName.ps1` (replace `ScriptName` with the actual name of the script file).
+   - Execute the script by typing `.\Configure_XProtect_Antivirus_Exclusions.ps1`.
 
 4. **Verify the exclusions**:
    - After running the script, check your antivirus settings to ensure that the specified file types, folders, and processes have been correctly excluded.
@@ -64,7 +66,7 @@ The script performs the following tasks:
 ### Important Notes
 
 - **Why Exclusions Are Necessary**: 
-   - The script follows recommendations from the KB article that highlight the importance of excluding certain files, folders, and processes from antivirus scanning. Scanning active video databases can lead to severe performance degradation and, in some cases, corruption of video recordings.
+   - The script follows recommendations from the [KB article](https://supportcommunity.milestonesys.com/s/article/Configure-anti-virus-software-on-XProtect-systems?language=en_US) that highlight the importance of excluding certain files, folders, and processes from antivirus scanning. Scanning active video databases can lead to severe performance degradation and, in some cases, corruption of video recordings.
 
 - **Port Exclusions**: 
    - This script does not include port exclusions as they were deemed unnecessary for the specific requirements. Ensure that your network configuration and firewall rules account for the necessary ports for XProtect to function correctly.
@@ -80,3 +82,5 @@ The script performs the following tasks:
 ### Conclusion
 
 By using this script, you ensure that your XProtect VMS operates optimally without interference from antivirus scans.
+
+For more information, refer to the [official Milestone KB article](https://supportcommunity.milestonesys.com/s/article/Configure-anti-virus-software-on-XProtect-systems?language=en_US).
